@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald&display=swap');
+html, body{
+    margin:0;
+    padding:0;
+}
+#2nd{
+    display: none;
+}
+
+.card::before, 
+.card::after{
+    content: '';
+    position: absolute;
+    border: 1px solid white;
+}
+.card::before{
+    top: 1rem;
+    bottom: 0.5rem;
+    right: 1rem;
+    
+}
+main{
+    display: grid;
+    
+    place-items: center;
+    height: 100vh;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    background-image: url("../images/markus-spiske-iar-afB0QQw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.card::after{
+    bottom: 1rem;
+    left: 1rem;
+    right: 0.5rem;
+}
+.card{
+    position: relative;
+    z-index: 1;
+    /* width:40%; */
+    /* height: 60%; */
+}
+
+.card__img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.card__body{
+    background: rgba(0,0,0,.5);
+    color: white;
+    padding: 3rem;
+}
+
+.card__title,
+.card__text{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.card__title{
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 2.5em;
+    position: relative;
+    z-index:1;
+    color: black;
+}
+.card__title::before{
+    content: '';
+    position: absolute;
+    width: calc(100% + 5rem);
+    background: rgba(255,255,0,0.85);
+    z-index: -1;
+    top: -0.1em;
+    bottom: -0.15em;
+    left: -5rem;
+    box-shadow: inset -15px 0 10px -10px rgba(0,0,0,0.5);
+}
+.card__title::after{
+    content: '\261c';
+    position: absolute;
+    background: rgba(255,255,0,0.85);
+    width: 3rem;
+    top: -0.1em;
+    bottom: -0.15em;
+    left: calc(100% + 3rem);
+    box-shadow: inset 15px 0 10px -10px rgba(0,0,0,0.5);
+}
+
+
+.card__text{
+    text-align: left;
+    font-size: 1.25rem;
+    color: white;
+    margin-left: 3em;
+}
