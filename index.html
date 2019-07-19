@@ -1,42 +1,83 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="https://kit.fontawesome.com/a16f876688.js"></script>
+    <link type="image/png" rel="shortcut icon" href="assets/ico/favicon.png" />
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"defer
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script> -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/a16f876688.js"></script> -->
+
 </head>
 
 <body>
     <main>
-        <div class="card">
-            <img src="./assets/images/pakata-goh-EJMTKCZ00I0-unsplash.jpg" alt="" class="card__img">
-            
-            <div class="card__body" id="1st">
-                <a href="skills.html"><h3 class="card__title">Evgeny Drapkin</h3></a>
-                <p class="card__text">Full stack software developer.</p>
-                <article class="card__text">
-                    <a href="tel:+972546787392">
-                        <i class="fas fa-phone-square-alt">  +972 54-6787392</i>
-                    </a>
-                </article>
-                <article class="card__text">    
-                    <a href="mailto:drapkine@gmail.com"><i class="fas fa-envelope-square">  drapkine@gmail.com</i> </a>
-                </article>  
-                <article class="card__text">    
-                        <a href="https://www.facebook.com/evgen.drapkin"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/eugen-drapkin-81308186"><i class="fab fa-linkedin"></i></a>
-                        <a href="skype:evgendrapkin?call"><i class="fab fa-skype"></i></a>
-                        <a href="https://github.com/zmiy"><i class="fab fa-github"></i></a>
-                        <a href="https://goo.gl/maps/xdE1qPiJ7AEFc19x6"><i class="fas fa-map-marker-alt"></i></a>
-                    </article>  
-            </div>
-        </div>
-        
+        <section class="container-fluid">
+            <div class="row col-12">
+                <div class="myCard">
+                    <img src="./assets/images/pakata-goh-EJMTKCZ00I0-unsplash.jpg" alt="" class="card__img">
+
+                    <div class="card__body" id="1st">
+                        <artical>
+                            <a href="skills.html">
+                                <h3 class="card__title">Evgeny Drapkin </h3>
+                            </a>
+                        </artical>
+                        <div class="__right">
+                            <artical class="card__text">
+                                <p>Full stack software developer.</p>
+                            </artical>
+                            <article class="card__text mt-2">
+                                <p>Call me:
+                                    <a href="tel:+972546787392">
+                                        <i class="fas fa-phone" aria-hidden="true"></i>
+                                    </a>
+                                    <a href="skype:evgendrapkin?call"><i class="fab fa-skype icon-x3 pl-2"></i></a>
+                                </p>
+                            </article>
+                            <article class="card__text">
+                                <p>Write to me:
+                                    <a href="mailto:drapkine@gmail.com"><i class="fas fa-envelope-square icon-x3"></i>
+                                    </a>
+                                </p>
+                            </article>
+                            <article class="card__text">
+                                <p>About me:
+                                    <a href="https://www.facebook.com/evgen.drapkin"><i
+                                            class="fab fa-facebook icon-x3 pr-2"></i></a>
+                                    <a href="https://www.linkedin.com/in/eugen-drapkin-81308186"><i
+                                            class="fab fa-linkedin pr-2"></i></a>
+
+                                    <a href="https://github.com/zmiy"><i class="fab fa-github icon-x3 pr-2"></i></a>
+                                    <a href="https://goo.gl/maps/xdE1qPiJ7AEFc19x6"><i
+                                            class="fas fa-map-marker-alt icon-x3"></i></a>
+                                </p>
+                            </article>
+
+                        </div>
+
+                    </div>
+
+                </div>
+        </section>
+
+
     </main>
+
 </body>
 
 </html>
